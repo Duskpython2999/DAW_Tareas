@@ -55,8 +55,16 @@ header {
     margin: 1em 5%; 
     box-sizing: border-box; 
 }
-
+img{
+ 
+        max-width: 100%;
+        height: auto;
     
+}
+#imagen_p{
+    max-width: 50%;
+        height: auto;
+}
     footer {
         background-color: #3f8194; 
         color: white;
