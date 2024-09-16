@@ -54,7 +54,7 @@ header {
     padding: 2em; 
     margin: 1em 5%; 
     box-sizing: border-box; 
-}footer {
+}#pie_i{
     background-color: #517847; /* Un gris más claro para suavizar el contraste */
     color: white;
     text-align: center;
@@ -64,12 +64,12 @@ header {
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3); /* Sombra para separarlo visualmente del contenido */
 }
 
-footer a {
+#pie_i a {
     color: #ddd;
     text-decoration: none;
     margin: 0 10px;
 }
 
-footer a:hover {
+#pie_i a:hover {
     color: #73ff50;
 }
