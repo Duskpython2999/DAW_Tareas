@@ -1,0 +1,84 @@
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo de los títulos */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+/* Estilo de los proyectos */
+.project {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo del pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #adb5bd;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
