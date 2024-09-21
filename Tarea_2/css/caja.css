@@ -151,5 +151,9 @@ footer a:hover {
     margin-top: -30px;
     margin-left: 40px;
 }
-
+.navbar-nav {
+    margin: 0 auto; /* Centra la lista de navegación */
+    justify-content: center; /* Asegura que los elementos de la lista se centren en su contenedor */
+    flex: 1; /* Permite que la lista ocupe todo el espacio disponible */
+}
 
