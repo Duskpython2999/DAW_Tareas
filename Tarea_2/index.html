@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
 
-               <li class="nav-item"><a class="nav-link"  href="estilo.html" target="_self">Estilo/a></li>
+               <li class="nav-item"><a class="nav-link"  href="estilo.html" target="_self">Estilo</a></li>
         <li class="nav-item"><a class="nav-link" href="grupo.html"target="_self">Grupo</a></li>
         
               
@@ -37,148 +37,48 @@
 <div class="contenedor">
 
 <hgroup>
-    <section class="caja-tipo">
-        <h1>Static</h1>
-        <p class="texto-detalle">
-            Este es el valor predeterminado para los elementos.
-            El elemento se coloca según el flujo normal del documento. <br />
-            Las propiedades:
-        <ul>
-            <li>left</li>
-            <li>right</li>
-            <li>top</li>
-            <li>bottom</li>
-            <li>z-index</li>
-        </ul>
-        No afectan a un elemento con
-        <i>posicion: static</i>
-        </p>
-        <article class="elemento-padre">
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
+   
+   
+  
+<h1>Conceptos de CSS3</h1>
+<br>
+<h2>Contenido, Relleno, Borde y Margen</h2>
+<br>
 
-            <div class="elemento-principal" style="position: static;left: 10px;bottom: 10px;">
-                Todos los ojos puestos en mí. Yo soy el elemento principal.
-            </div>
-
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-        </article>
-    <hr>
+<div class="content-box">
     <br>
-    </section>
-    <section class="caja-tipo">
-        <h1>Relative</h1>
-        <p class="texto-detalle">
-            Los elementos con <i>posicion: relative</i> permanecen en el flujo normal del documento.<br />
-            Pero, a diferencia de los elementos estáticos, las propiedades:
-        <ul>
-            <li>left</li>
-            <li>right</li>
-            <li>top</li>
-            <li>bottom</li>
-            <li>z-index</li>
-        </ul>
-        Sí afectan la posición del elemento. <br />
-        Se aplica al elemento un desplazamiento, basado en los valores de las propiedades:
-        <ul>
-            <li>left</li>
-            <li>right</li>
-            <li>top</li>
-            <li>bottom</li>
-        </ul> en relación con sí mismo.<br />
-        </p>
-        <article class="elemento-padre">
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-
-            <div id="Elemento-Relativo" class="elemento-principal" >
-                Todos los ojos puestos en mí. Yo soy el elemento principal.
-            </div>
-
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-        </article>
-    </section>
+    <p>Este es un párrafo dentro de una caja que tiene relleno, borde y margen. El relleno separa el texto del borde, mientras que el margen separa esta caja de otros elementos.</p>
+    <br></div>
+<hr>
+<h2><br>Elementos de Bloque y en Línea<br></h2>
+<p><br>
+    A continuación, se presentan ejemplos de elementos de bloque y en línea. Los elementos de bloque ocupan todo el ancho disponible y comienzan en una nueva línea, mientras que los elementos en línea solo ocupan el espacio que necesitan.
+    <br></p>
     <hr>
+<h3><br>Elementos en Línea<br></h3>
+<br>
+<span class="inline">Hola Mundo </span>
+<span class="inline">Buenas Mundo</span>
+<span class="inline">Que tal Mundo</span>
+<br>
+<hr>
+<h3><br>Elementos de Bloque<br></h3>
+<br>
+<div class="block">Elemento de bloque 1</div>
+<div class="block">Elemento de bloque 2</div>
+<br>
+<hr>
+<h2><br>Cambiando el Comportamiento con Display<br></h2>
+<p><br>
+    Utilizando el &lt;display: block&gt;,podemos hacer que un elemento en linea se comporte como uno en bloque
+    <br></p>
     <br>
-    <section class="caja-tipo">
-        <h1>Absolute</h1>
-        <p class="texto-detalle">
-            Los elementos con posicion: absoluta se colocan en relación con sus elementos principales. <br />
-            No se crea ningún espacio para el elemento en el diseño de página. Los valores de:
-        <ul>
-            <li>left</li>
-            <li>right</li>
-            <li>top</li>
-            <li>bottom</li>
-        </ul>
-        determinan la posición final del elemento.<br />
-        </p>
-        <article class="elemento-padre" style=" position:relative; height: 100px;">
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-
-            <div class="elemento-principal  elemento-Absoluto">
-                Todos los ojos puestos en mí. Yo soy el elemento principal.
-            </div>
-
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-        </article>
-    </section>
     <hr>
-    <br>
-    <section class="caja-tipo">
-        <br>
-        <h1 style="position: relative; z-index: 9;">Fixed</h1>
-        <p class="texto-detalle">
-            Los elementos de posición fija son similares a los elementos de posición absoluta.<br />
-            También se eliminan del flujo normal del documento. <br />
-            Pero a diferencia de los elementos absolutamente posicionados, siempre están posicionados en relación
-            con el elemento
-            <i>&lt;html&gt;</i>.
-        </p>
-        <article class="elemento-padre elemento-fixed" >
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-
-            <div class="elemento-principal">
-                Todos los ojos puestos en mí. Yo soy el elemento principal.
-            </div>
-
-            <div class="elemento-hermano">
-                Soy el otro elemento hermano.
-            </div>
-        </article>
-    </section>
-    <hr>
-    <br>
-    <section class="caja-tipo">
-        <h1>Z-index</h1>
-        <p class="texto-detalle">
-            La propiedad del índice z especifica el orden de pila de un elemento.<br />
-            Un elemento con un orden de pila mayor siempre está delante de un elemento con un orden de pila
-            menor.<br />
-
-        </p>
-        <article class="elemento-padre">
-            <div class="box green-box"> </div>
-            <div class="box blue-box"> </div>
-            <div class="box purple-box"> </div>
-
-        </article>
-        
-        <br>
+<span class="inline-to-block">Este elemento en línea ahora se comporta como un bloque.</span>
+<br>
+    </hgroup>
     </div>
-</hgroup>
+
 </div>
 <footer id="pie_i">
     <p>&copy; 2024 Francisco Muñoz Castro. Todos los derechos reservados.</p>

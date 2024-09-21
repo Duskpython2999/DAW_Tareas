@@ -25,7 +25,7 @@ font-family: 'Trebuchet MS',  Arial, sans-serif;
 
 
 header {
-     background-image: url("../img/fondo.jpg") repeat-x;
+    background-image: url("../img/fondo.jpg");
     background-color: #120d1f;
     padding: 3%;
     text-align: center;
@@ -77,83 +77,41 @@ footer a:hover {
 
 
 
-
-
-.caja-tipo {
-    padding: 1em;
-    margin: 1em;
+.content-box {
+    background-color: #b2dfdb;
+    padding: 30px; /* Relleno dentro de la caja */
+    margin: 20px 0; /* Margen fuera de la caja */
+    border: 5px solid #00796b; /* Borde de la caja */
+    color: #004d40;
 }
 
-.texto-detalle {
-    margin: 0.5em auto;
-    padding: 0.5em 1em;
-}
-
-.caja-tipo ul {
-    list-style: square;
-    padding-left: 2em;
-}
-
-.caja-tipo ul li {
-    font-style: italic;
-    line-height: 1.5em;
-}
-/*positioning*/
-.elemento-padre {
-    border: 2px solid purple;
-    padding: 1em;
-    margin: 1em;
-}
-.elemento-principal {
-    color :#120d1f;
-    background-color: yellow;
-    padding: 1em;
-}  
-.elemento-hermano {
+.inline {
+    display: inline;
+    background-color: #81c784;
     color: white;
-    background-color: blue;
-    padding: 1em;
-    border: 1px solid #81adc8;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
- .elemento-fixed{
-    position: fixed;
-    right: 0;
-    bottom: 50px;
- }
-#Elemento-Relativo{
-    position: relative;
-    left: 10px;
-    bottom: 10px;
+
+.block {
+    display: block;
+    background-color: #ff8a65;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
-/* .elemento-Absoluto{
-    position: absolute;
-    left: 30px;
-    bottom: 10px;
-}  */
-/*z-index*/
-.box {
-    width: 100px;
-    height: 100px;
-    border: 3px solid;
-    position: relative;
+
+.inline-to-block {
+    display: block; /* Cambia el comportamiento a bloque */
+    background-color: #4db6ac;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
-.green-box {
-    background-color: green; 
-}
-.blue-box {
-    background-image: linear-gradient(90deg, #0500fc 0%, #9775fa 0%, #00f7ff 90%);
-    margin-top: -30px;
-    margin-left: 20px;
-    z-index: 1;
-}
-.purple-box {
-    background-color: purple;
-    margin-top: -30px;
-    margin-left: 40px;
-}
-.navbar-nav {
-    margin: 0 auto; /* Centra la lista de navegación */
-    justify-content: center; /* Asegura que los elementos de la lista se centren en su contenedor */
-    flex: 1; /* Permite que la lista ocupe todo el espacio disponible */
-}
+
+
 
