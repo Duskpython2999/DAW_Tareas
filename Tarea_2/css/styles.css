@@ -1,14 +1,15 @@
 html, body {
     margin: 0;
     padding: 0;
-   
+   box-sizing: border-box;
 
 
-}body image{
-    width: auto;
-    height: auto;
-
+}body{
+    line-height: 18px;
+font-family: 'Trebuchet MS',  Arial, sans-serif;
+    font-size: medium;
 }
+
 .contenedor {
     max-width: 1200px; 
     width: 100%; 
@@ -24,6 +25,10 @@ html, body {
 
 
 header {
+    /* background-image: url(./img), url(./splash.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-blend-mode: normal, screen; */
     background-color: #120d1f;
     padding: 3%;
     text-align: center;
@@ -149,3 +154,5 @@ footer a:hover {
     margin-top: -30px;
     margin-left: 40px;
 }
+
+
