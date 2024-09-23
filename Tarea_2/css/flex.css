@@ -89,3 +89,11 @@ footer a:hover {
         display: flex;
          align-items: stretch;
     }
+    #e_alignC{
+        display: flex; 
+        flex-wrap: wrap-reverse; 
+        align-content:space-between;
+    }
+    #orden{
+        display: flex;
+    }

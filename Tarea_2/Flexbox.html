@@ -100,6 +100,7 @@
    <br>
 
    <h2>justify-content:</h2>
+   <br>
    <p>Alinea los elementos a lo largo del eje principal.
      Los valores pueden ser </p>
      <p id="ejemplos">flex-start</p>
@@ -107,7 +108,7 @@
      <p id="ejemplos">center</p>
      <p id="ejemplos"> space-between</p>
      <p id="ejemplos"> space-around</p>
-
+<br>
    <div class="Etiquetas"  id="e_justify">
        
    <div> Elemento 1 </div>
@@ -118,14 +119,16 @@
    <hr>
    <br>
    <h2>align-items:</h2>
+   <br>
    <p>Alinea los elementos a lo largo del eje transversal (perpendicular al eje principal).
     Puede ser </p>
+    
      <p id="ejemplos">flex-start</p>
      <p id="ejemplos">flex-end</p>
      <p id="ejemplos">center</p>
      <p id="ejemplos">baseline.</p>
      <p id="ejemplos"> stretch</p>
-
+<br>
    <div class="Etiquetas"  id="e_align">
        
    <div> Elemento 1 </div>
@@ -135,6 +138,100 @@
    
    <hr>
    <br>
+
+   <h2>align-content:</h2>
+   <br>
+   <p>Alinea las líneas del contenedor flexible cuando hay espacio adicional en el eje transversal. </p>
+   <br>
+
+   <div class="Etiquetas"  id="e_alignC">
+       
+   <div> Elemento 1 </div>
+   <div> Elemento 2 </div>
+   <div> Elemento 3 </div>
+   </div> 
+   
+   <hr>
+   <br>
+
+<h1>B. Propiedades de los Flex Items</h1>
+<br>
+   <h2>order: </h2>
+   <br>
+   <p>Controla el orden de los elementos. El valor predeterminado es 0.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="order: 2;">Elemento 1</div>
+    <div style="order: 1;">Elemento 2</div>
+    <div style="order: 3;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>flex-grow: </h2>
+   <br>
+   <p>Controla cuánto crecerá un elemento en relación con los demás cuando haya espacio disponible.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-grow: 1;">Elemento 1</div>
+    <div style="flex-grow: 2;">Elemento 2</div>
+    <div style="flex-grow: 1;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>flex-shrink:</h2>
+   <br>
+   <p> Controla cuánto puede reducirse un elemento en relación con los demás cuando hay menos espacio.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-shrink: 1;">Elemento 1</div>
+    <div style="flex-grow: 1;">Elemento 2</div>
+    <div style="flex-shrink: 1;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+   <h2>flex-basis: </h2>
+   <br>
+   <p>  Define el tamaño inicial del elemento antes de distribuir el espacio disponible</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-basis: 100px;">Elemento 1</div>
+    <div style="flex-basis: 200px;">Elemento 2</div>
+    <div style="flex-basis: 150px;">Elemento 3</div>
+    <div> Elemento 4</div>
+    
+   </div> 
+   
+   <hr>
+   <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
