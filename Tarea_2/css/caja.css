@@ -41,18 +41,7 @@ header {
 
     opacity: 50%;;
 }
-.Ejemplo_EB {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    white-space: pre-wrap;
-}
-#Etiquetas_EB{
-    font-family: Arial, sans-serif;
-            margin: 20px;
 
-}
 footer {
     background-color: #22173d; 
     color: white;
@@ -77,7 +66,7 @@ footer a:hover {
 
 
 
-.content-box {
+.Ejemplo{
     background-color: #b2dfdb;
     padding: 30px; /* Relleno dentro de la caja */
     margin: 20px 0; /* Margen fuera de la caja */
@@ -85,7 +74,7 @@ footer a:hover {
     color: #004d40;
 }
 
-.inline {
+.En_linea {
     display: inline;
     background-color: #81c784;
     color: white;
@@ -94,7 +83,7 @@ footer a:hover {
     border-radius: 5px;
 }
 
-.block {
+.Bloque {
     display: block;
     background-color: #ff8a65;
     color: white;
@@ -103,7 +92,7 @@ footer a:hover {
     border-radius: 5px;
 }
 
-.inline-to-block {
+.linea-Bloque {
     display: block; /* Cambia el comportamiento a bloque */
     background-color: #4db6ac;
     color: white;
