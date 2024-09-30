@@ -38,24 +38,79 @@
        </nav>
        <br>
 
-       <div class="container text-center">
-        <div class="row">
-          <div class="col">
-           Caracteristicas 
-          </div>
-          <div class="col">
-            Definición
-          </div>
-          <div class="row">
-            
-          </div>
+
+       <h2> Grid System</h2>
+       <br>
+       <p>El sistema de cuadrícula de Bootstrap es un diseño flexible basado en filas y columnas que permite crear layouts responsivos. 
+        Está basado en un sistema de 12 columnas,y los desarrolladores pueden combinar diferentes tamaños de columna para crear diversas disposiciones.</p>
+        <p>Bootstrap también permite el uso de clases para definir el tamaño de las columnas en diferentes puntos de interrupción, lo que hace que el diseño sea completamente responsivo.</p>
+        <br>
+       <div class=" text-center ">
+        <div class="row row-cols-2">
+          <div class="col titulo">Caracteristicas</div>
+          <div class="col titulo">Descripcion</div>
+          <div class="col titulo">Simplicidad:</div>
+          <div class="col">Bootstrap ofrece una amplia gama de componentes listos para usar que reducen la necesidad de escribir CSS desde cero</div>
+          <div class="col titulo">Responsividad</div>
+            <div class="col"> Está diseñado para que los sitios se adapten a diferentes tamaños de pantalla,
+                 asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.  </div>
+        <div class="col titulo">Personalización:</div>
+        <div class="col">   Bootstrap permite la personalización de estilos mediante Sass,
+             lo que facilita la adaptación del framework a las necesidades específicas de un proyecto.     </div>
         </div>
       </div>
+      <br>
+      <hr>
 
-    </div>
-    <div class="container_2">
+     <br> <h2> Flex    </h2>
+     <br>
+      <p>El modelo de Flexbox en Bootstrap permite crear interfaces adaptables y dinámicas.
+         Bootstrap proporciona clases utilitarias para aplicar propiedades flexibles sin necesidad de CSS adicional. </p>      
 
+        <div id="flex">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">Flex item 1</div>
+                <div class="p-2">Flex item 2</div>
+                <div class="p-2">Flex item 3</div>
+              </div>
+              <div class="d-flex flex-column-reverse">
+                <div class="p-3">Flex item 1</div>
+                <div class="p-3">Flex item 2</div>
+                <div class="p-3">Flex item 3</div>
+              </div>
+
+        </div>
+        <br>
+      <hr>
+
+     <br> <h2> Control Carousel    </h2>
+     <br>
+<p>El Carousel es un componente dinámico que permite presentar contenido, como imágenes o elementos de texto, de manera interactiva. Los usuarios pueden navegar entre los elementos del carrusel mediante botones o deslizándose manualmente.</p>
+   
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/css.png" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/html.png" class="d-block w-100" alt="Imagen 2">
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+
+</div>
+    
 </div>
 </hgroup>
 </body>

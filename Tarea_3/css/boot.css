@@ -5,6 +5,10 @@ body{
     background: linear-gradient(to bottom, rgb(0, 17, 85), rgb(0, 0, 0)) ;
     color: azure;
 }
+h2{
+    font-size: larger;
+    font-weight: bold;
+}
 
 .general{
     max-width: 1200px; 
@@ -75,4 +79,21 @@ nav a {
 nava:hover {
     text-decoration: underline;
     color: #ff0000;
+}
+.text-center .row-cols-2 .col {
+    border: 0.1px solid  rgb(0, 0, 153);
+    background-color: rgb(150, 145, 145);
+    text-align: justify;
+    color: black;
+}
+.text-center .row-cols-2 .titulo{
+    font-weight: bold;
+}
+#flex .flex-column.mb-3 .p-2{
+    border:0.5px solid #ff0000;
+    background-color: #ff6464;
+}
+#flex .flex-column-reverse .p-3{
+    border:0.5px solid #7ac36c;
+    background-color: #20c100;
 }
