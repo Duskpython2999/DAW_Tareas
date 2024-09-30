@@ -29,7 +29,7 @@
 <br>
                 
         </div>
-    <div class="cotainer_1">
+    <div id="conten" class="cotainer_1">
         <nav>
            
             <a href="index.html">Inicio</ahref>
@@ -45,8 +45,7 @@
         Está basado en un sistema de 12 columnas,y los desarrolladores pueden combinar diferentes tamaños de columna para crear diversas disposiciones.</p>
         <p>Bootstrap también permite el uso de clases para definir el tamaño de las columnas en diferentes puntos de interrupción, lo que hace que el diseño sea completamente responsivo.</p>
         <br>
-       <div class=" text-center ">
-        <div class="row row-cols-2">
+        <div id="row" class="row row-cols-2">
           <div class="col titulo">Caracteristicas</div>
           <div class="col titulo">Descripcion</div>
           <div class="col titulo">Simplicidad:</div>
@@ -86,7 +85,7 @@
      <br> <h2> Control Carousel    </h2>
      <br>
 <p>El Carousel es un componente dinámico que permite presentar contenido, como imágenes o elementos de texto, de manera interactiva. Los usuarios pueden navegar entre los elementos del carrusel mediante botones o deslizándose manualmente.</p>
-   
+<br>   
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -105,6 +104,33 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Siguiente</span>
     </button>
+
+    <br>
+    <hr>
+
+   <br> <h2> Control Navbar   </h2>
+   <br>
+<p>La barra de navegación (Navbar) es un componente esencial para la navegación en un sitio web. Bootstrap proporciona una navbar adaptable que se puede personalizar fácilmente y que se ajusta a diferentes tamaños de pantalla.</p>
+<br>   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#conten">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#row">Características</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
 </div>
 
 
