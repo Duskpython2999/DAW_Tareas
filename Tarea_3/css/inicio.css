@@ -1,0 +1,48 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+aside {
+    border-right: 1px solid #ddd;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    main {
+        margin-left: 25%;
+    }
+}
+

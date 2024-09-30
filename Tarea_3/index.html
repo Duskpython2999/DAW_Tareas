@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 3: Diseño Web Responsivo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/inicio.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Diseño Web Responsivo</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Conceptos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Media Queries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <aside class="col-lg-3 bg-light p-3">
+                <h2>Índice</h2>
+                <ul>
+                    <li><a href="#responsive-design">Diseño Web Responsivo</a></li>
+                    <li><a href="#viewport">Viewport</a></li>
+                    <li><a href="#media-queries">Media Queries</a></li>
+                    <li><a href="#bootstrap">Bootstrap 5</a></li>
+                </ul>
+            </aside>
+
+            <main class="col-lg-9">
+                <article id="responsive-design">
+                    <h2>Diseño Web Responsivo</h2>
+                    <p>El diseño web responsivo permite que los sitios se adapten a diferentes tamaños de pantalla, mejorando la experiencia del usuario en múltiples dispositivos.</p>
+                </article>
+
+                <article id="viewport">
+                    <h2>Viewport</h2>
+                    <p>El viewport es la ventana visible del contenido en el navegador del dispositivo. Ayuda a que el contenido se ajuste adecuadamente a diferentes pantallas.</p>
+                </article>
+
+                <article id="media-queries">
+                    <h2>Media Queries</h2>
+                    <p>Las media queries permiten aplicar estilos CSS diferentes en función del tamaño de pantalla.</p>
+                </article>
+
+                <article id="bootstrap">
+                    <h2>Bootstrap 5</h2>
+                    <p>Bootstrap es un framework CSS que facilita el desarrollo de sitios web responsivos mediante un sistema de grid, contenedores y componentes reutilizables.</p>
+                </article>
+
+                
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" >
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" >
+                            <img src="./img/html.png" class="d-block w-100" alt="..."  width="250" height="500">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/css.png" class="d-block w-100" alt="..."width="250" height="500">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/js.png" class="d-block w-100" alt="..."width="250" height="500">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/js.png" class="d-block w-100" alt="..." width="250" height="500">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="row">
+            <div class="col-md-6">Contenido Footer 1</div>
+            <div class="col-md-6">Contenido Footer 2</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
