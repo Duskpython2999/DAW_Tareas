@@ -100,3 +100,23 @@ nav ul.pagination
     font-size: larger;
     font-weight: lighter;
    }
+
+
+
+
+
+   /* Oculta las imágenes móviles por defecto */
+.mobile-image {
+  display: none;
+}
+
+/* Muestra la imagen móvil en pantallas pequeñas */
+@media (max-width: 768px) {
+  .desktop-image {
+      display: none; /* Oculta la imagen de escritorio */
+  }
+  .mobile-image {
+      display: block; /* Muestra la imagen móvil */
+  }
+
+}
