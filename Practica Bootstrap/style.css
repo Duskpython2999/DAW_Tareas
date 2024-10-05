@@ -7,7 +7,7 @@ body {
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
-    opacity: 0.9; /* Control de la transparencia del fondo */
+    
 
     
 }
@@ -42,7 +42,7 @@ h3 {
 .contenedor{
     margin: 0px 10%;
 
-    background-color: rgb(255, 255, 255); /* Fondo blanco semi-transparente para contenido */
+    background-color: rgb(255, 255, 255); 
     padding: 20px;
     border-radius: 10px;
    
@@ -105,18 +105,18 @@ nav ul.pagination
 
 
 
-   /* Oculta las imágenes móviles por defecto */
+
 .mobile-image {
   display: none;
 }
 
-/* Muestra la imagen móvil en pantallas pequeñas */
+
 @media (max-width: 768px) {
   .desktop-image {
-      display: none; /* Oculta la imagen de escritorio */
+      display: none; 
   }
   .mobile-image {
-      display: block; /* Muestra la imagen móvil */
+      display: block; 
   }
 
 }
