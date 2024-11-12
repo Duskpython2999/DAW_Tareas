@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #bcbcbc;
+
+
+}body image{
+    width: auto;
+    height: auto;
+
+}
+.contenedor {
+    max-width: 1200px; /* Controla el ancho máximo */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible hasta el límite */
+    margin: 0 auto; /* Centra horizontalmente */
+    background-color: white; /* Ejemplo de fondo */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#title{
+    color: black;
+    text-decoration: none;
+}
+.Lista{
+    background-color: black;
+}
+.lista_Tipo {
+    list-style-type: none;
+   margin: 0;
+   padding-top: 25px;
+   padding-bottom: 25px;
+    display: flex; 
+}
+.lista_Tipo li {
+    margin-right: 20px; 
+}
+.lista_Tipo a {
+
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+.lista_Tipo a:hover {
+    text-decoration: underline;
+    color: #ffa600;
+}
+header {
+    background-color: #ffa600;
+    padding: 3%;
+    text-align: center;
+    width: 100%; }
+
+
+#Nombre{
+    margin: 2px;
+    margin-bottom: 5%;
+
+    opacity: 50%;;
+}
+.Ejemplo_EB {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+#Etiquetas_EB{
+    font-family: Arial, sans-serif;
+            margin: 20px;
+
+}
+footer {
+    background-color: #be7c01; 
+    color: white;
+    text-align: center;
+    padding: 30px 0; 
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3); 
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #be7c01;
+}

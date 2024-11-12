@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+
+}body{
+    line-height: 18px;
+font-family: 'Trebuchet MS',  Arial, sans-serif;
+    font-size: medium;
+}
+
+.contenedor {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto;
+   
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#title{
+    color: black;
+    text-decoration: none;
+}
+
+
+header {
+    background-image: url("../img/fondo.jpg");
+    background-color: #120d1f;
+    padding: 3%;
+    text-align: center;
+    width: 100%; 
+ color: #ffff;
+}
+
+footer {
+    background-color: #22173d; 
+    color: white;
+    text-align: center;
+    padding: 30px 0; 
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3); 
+}
+
+footer a {
+   
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #be7c01;
+
+}
+.Etiquetas{
+   
+    background-color: #b2dfdb;
+    padding: 30px; /* Relleno dentro de la caja */
+    margin: 20px 0; /* Margen fuera de la caja */
+    border: 5px solid #00796b; /* Borde de la caja */
+    color: #004d40;  
+    }
+
+    #direccion{
+        display: flex; 
+        flex-direction: row;
+    }
+
+    #ejemplos {
+        
+        margin-right:75% ;
+        font-weight: bold;
+       font-style:oblique
+    }
+    #e_wap{
+        display: flex; 
+        flex-wrap: wrap-reverse;
+    }
+    #e_flow{
+        display: flex;
+         flex-flow: row-reverse  wrap-reverse;
+    }
+    #e_justify{
+        display: flex; 
+        justify-content: space-between;
+    }
+    #e_align{
+        display: flex;
+         align-items: stretch;
+    }
+    #e_alignC{
+        display: flex; 
+        flex-wrap: wrap-reverse; 
+        align-content:space-between;
+    }
+    #orden{
+        display: flex;
+    }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>FlexBox</title>
+    <header>
+        <h1>Tarea de HTML5 - FlexBox</h1>
+
+    </header>  
+</head>
+<body>
+    <nav  class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+
+               <li class="nav-item"><a class="nav-link"  href="index.html" target="_self">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="estilo.html"target="_self">Estilo</a></li>
+        
+              
+            </ul>
+           
+            
+          </div>
+
+        </div>
+      </nav>
+
+    
+
+<div class="contenedor">
+
+<hgroup>
+   
+   
+  
+
+    </hgroup>
+   
+     <h1>A. Propiedades del Flex Container;</h1>
+<br>
+     <h2>flex-direction:</h2>
+     <br>
+    <p> Define la dirección en la que se organizan los elementos dentro del contenedor flexible. 
+        Puede ser</p>  
+        <p id="ejemplos">row</p>
+        <p id="ejemplos">row-reverse </p>
+        <p id="ejemplos">column</p>    
+        <p id="ejemplos">column-reverse.</p> 
+    <div class="Etiquetas" > 
+        <div id="direccion">
+    <div> Elemento 1 </div>
+    <div> Elemento 2 </div>
+ </div> 
+    <div> Elemento 3 </div>
+   </div>
+
+    <hr>
+    <br>
+
+     <h2>flex-wrap:</h2>
+     <br>
+    <p>Controla si los elementos deben ajustarse en varias líneas. 
+        Los valores posibles son</p>
+    <p id="ejemplos">nowrap</p>
+    <p id="ejemplos"> wrap</p>
+    <p id="ejemplos">wrap-reverse</p>    
+   
+
+    <div class="Etiquetas" id="e_wap">
+        
+    <div> Elemento 1 </div>
+    <div> Elemento 2 </div>
+    <div> Elemento 3 </div>
+    </div> 
+    
+    <hr>
+    <br>
+
+    <h2>flex-flow:</h2>
+    <br>
+   <p>Es una combinación de <code>flex-direction </code> y <code>flex-wrap</code>.</p>
+ 
+  
+
+   <div class="Etiquetas"  id="e_flow">
+       
+   <div> Elemento 1 </div>
+   <div> Elemento 2 </div>
+   <div> Elemento 3 </div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>justify-content:</h2>
+   <br>
+   <p>Alinea los elementos a lo largo del eje principal.
+     Los valores pueden ser </p>
+     <p id="ejemplos">flex-start</p>
+     <p id="ejemplos">flex-end</p>
+     <p id="ejemplos">center</p>
+     <p id="ejemplos"> space-between</p>
+     <p id="ejemplos"> space-around</p>
+<br>
+   <div class="Etiquetas"  id="e_justify">
+       
+   <div> Elemento 1 </div>
+   <div> Elemento 2 </div>
+   <div> Elemento 3 </div>
+   </div> 
+   
+   <hr>
+   <br>
+   <h2>align-items:</h2>
+   <br>
+   <p>Alinea los elementos a lo largo del eje transversal (perpendicular al eje principal).
+    Puede ser </p>
+    
+     <p id="ejemplos">flex-start</p>
+     <p id="ejemplos">flex-end</p>
+     <p id="ejemplos">center</p>
+     <p id="ejemplos">baseline.</p>
+     <p id="ejemplos"> stretch</p>
+<br>
+   <div class="Etiquetas"  id="e_align">
+       
+   <div> Elemento 1 </div>
+   <div> Elemento 2 </div>
+   <div> Elemento 3 </div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>align-content:</h2>
+   <br>
+   <p>Alinea las líneas del contenedor flexible cuando hay espacio adicional en el eje transversal. </p>
+   <br>
+
+   <div class="Etiquetas"  id="e_alignC">
+       
+   <div> Elemento 1 </div>
+   <div> Elemento 2 </div>
+   <div> Elemento 3 </div>
+   </div> 
+   
+   <hr>
+   <br>
+
+<h1>B. Propiedades de los Flex Items</h1>
+<br>
+   <h2>order: </h2>
+   <br>
+   <p>Controla el orden de los elementos. El valor predeterminado es 0.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="order: 2;">Elemento 1</div>
+    <div style="order: 1;">Elemento 2</div>
+    <div style="order: 3;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>flex-grow: </h2>
+   <br>
+   <p>Controla cuánto crecerá un elemento en relación con los demás cuando haya espacio disponible.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-grow: 1;">Elemento 1</div>
+    <div style="flex-grow: 2;">Elemento 2</div>
+    <div style="flex-grow: 1;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+
+   <h2>flex-shrink:</h2>
+   <br>
+   <p> Controla cuánto puede reducirse un elemento en relación con los demás cuando hay menos espacio.</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-shrink: 1;">Elemento 1</div>
+    <div style="flex-grow: 1;">Elemento 2</div>
+    <div style="flex-shrink: 1;">Elemento 3</div>
+   </div> 
+   
+   <hr>
+   <br>
+   <h2>flex-basis: </h2>
+   <br>
+   <p>  Define el tamaño inicial del elemento antes de distribuir el espacio disponible</p>
+   <br>
+
+   <div class="Etiquetas"  id="orden">
+       
+    <div style="flex-basis: 100px;">Elemento 1</div>
+    <div style="flex-basis: 200px;">Elemento 2</div>
+    <div style="flex-basis: 150px;">Elemento 3</div>
+    <div> Elemento 4</div>
+    
+   </div> 
+   
+   
+
+</div>
+
+<footer id="pie_i">
+    <p>&copy; 2024 Francisco Muñoz Castro. Todos los derechos reservados.</p>
+    <p>
+        Correo: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a> | 
+        Teléfono: <a href="tel:+123456789">+123 456 789</a>
+    </p>
+</footer>
+</body>
+</html>
+

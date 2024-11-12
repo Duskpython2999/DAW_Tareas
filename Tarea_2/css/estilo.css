@@ -1,0 +1,147 @@
+html, body {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+
+}body{
+    line-height: 18px;
+font-family: 'Trebuchet MS',  Arial, sans-serif;
+    font-size: medium;
+}
+
+.contenedor {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto;
+   
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#title{
+    color: black;
+    text-decoration: none;
+}
+
+
+header {
+     background-image: url("../img/fondo.jpg");
+  
+    background-color: #120d1f;
+    padding: 3%;
+    text-align: center;
+    width: 100%; 
+ color: #ffff;
+}
+    
+
+
+#Nombre{
+    margin: 2px;
+    margin-bottom: 5%;
+
+    opacity: 50%;;
+}
+
+
+
+footer {
+    background-color: #22173d; 
+    color: white;
+    text-align: center;
+    padding: 30px 0; 
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3); 
+}
+
+footer a {
+   
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #be7c01;
+
+}
+
+
+
+
+
+
+.caja-tipo {
+    padding: 1em;
+    margin: 1em;
+}
+
+.texto-detalle {
+    margin: 0.5em auto;
+    padding: 0.5em 1em;
+}
+
+.caja-tipo ul {
+    list-style: square;
+    padding-left: 2em;
+}
+
+.caja-tipo ul li {
+    font-style: italic;
+    line-height: 1.5em;
+}
+/*positioning*/
+.elemento-padre {
+    border: 2px solid purple;
+    padding: 1em;
+    margin: 1em;
+}
+.elemento-principal {
+    color :#120d1f;
+    background-color: yellow;
+    padding: 1em;
+}  
+.elemento-hermano {
+    color: white;
+    background-color: blue;
+    padding: 1em;
+    border: 1px solid #81adc8;
+}
+ .elemento-fixed{
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+ }
+#Elemento-Relativo{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+/* .elemento-Absoluto{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+}  */
+/*z-index*/
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    position: relative;
+}
+.green-box {
+    background-color: green; 
+}
+.blue-box {
+    background-image: linear-gradient(90deg, #0500fc 0%, #9775fa 0%, #00f7ff 90%);
+    margin-top: -30px;
+    margin-left: 20px;
+    z-index: 1;
+}
+.purple-box {
+    background-color: purple;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+

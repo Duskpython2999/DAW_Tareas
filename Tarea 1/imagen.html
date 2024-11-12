@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/imagen.css">
+    <title>Enlace</title>
+    <header>
+        <h1 ><a href="./index.html"id="title">Tarea de HTML5 - Estructura de Imagen</a></h1>
+
+    </header>  
+</head>
+<body>
+
+
+    <div class="Lista"><ul class="lista_Tipo" >
+        <li><a href="index.html" target="_self">Inicio</a></li>
+        <li><a href="Seccion.html" target="_self">Seccion</a></li>
+        <li><a href="grupo.html" target="_self">Grupo</a></li>
+        <li><a href="Textos.html" target="_self">Textos</a></li>
+        <li><a href="enlace.html" target="_self">Enlace</a></li>
+        <li><a href="multimedia.html" target="_self">Multimedia</a></li>
+    </ul>
+</div> 
+ <div class="contenedor">
+
+
+
+     
+      <hgroup>
+<h1> Etiquetas de estructura de Imagen: </h1>
+     
+ 
+<h2>Etiqueta &lt;img&gt;</h2>
+<p>La etiqueta &lt;img&gt; define una imagen, que puede tener un atributo src para indicar la URL de la imagen, un atributo alt para indicar el texto alternativo, y otros atributos para el tamaño, título o estilo.</p>
+<div class="Etiquetas">
+    <img src="./img/Triste.jpg" alt="Ejemplo de Imagen" width="300">
+</div>
+<br>
+<hr>
+<h2>Etiqueta &lt;picture&gt;</h2>
+<p>La etiqueta &lt;picture&gt; define una imagen con varias fuentes, que puede contener elementos &lt;source&gt; para indicar diferentes versiones según el tamaño de la pantalla, el tipo de dispositivo o el formato de la imagen.</p>
+<div class="Etiquetas">
+    <picture>
+        <source srcset="./img/Palta.jpg" media="(min-width: 800px)">
+        <source srcset="./img/Triste.jpg" media="(min-width: 400px)">
+        <img src="./img/paisaje.jpg" alt="Imagen adaptativa">
+    </picture>
+</div>
+<br>
+<hr>
+<h2>Etiqueta &lt;source&gt;</h2>
+<p>La etiqueta &lt;source&gt; define una fuente de imagen o audio dentro de un elemento &lt;picture&gt; o &lt;audio&gt;, con atributos srcset y media para especificar la URL y la condición de la fuente.</p>
+<div class="Etiquetas">
+   <h3>Ejemplo es parte de ejemplo de  &lt;picture&gt;</h3>
+</div>
+<br>
+<hr>
+<h2>Etiqueta &lt;canvas&gt;</h2>
+<p>La etiqueta &lt;canvas&gt; define un lienzo, que puede contener gráficos dibujados con JavaScript o con la API de WebGL.</p>
+<div class="Etiquetas">
+    <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(10, 10, 150, 100);
+    </script>
+</div>
+<br>
+<hr>
+<h2>Etiqueta &lt;svg&gt;</h2>
+<p>La etiqueta &lt;svg&gt; define un gráfico vectorial escalable, que puede contener elementos que definen formas, textos, filtros, animaciones o transformaciones.</p>
+<div class="Etiquetas">
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="red" />
+    </svg>
+</div>
+</hgroup>  
+    </div>    
+   
+    <footer>
+        <p>&copy; 2024 Francisco Muñoz Castro. Todos los derechos reservados.</p>
+        <p>
+            Correo: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a> | 
+            Teléfono: <a href="tel:+123456789">+123 456 789</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

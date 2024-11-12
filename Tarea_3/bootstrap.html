@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/boot.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <hgroup>
+    <div class=" general container-fluid">
+        <header>
+        <h1>Bootstrap - v5 </h1>  
+        </header>
+        <br>
+        <div id="referencia">
+      
+            <img src="./img/descarga.jpeg" alt="logo_boot">
+            
+        </div>
+        <div id="relacion">
+            <h2>Bootstrap 5</h2>
+            <p>Bootstrap 5 es un framework de front-end de código abierto que facilita el desarrollo de sitios web y 
+                aplicaciones responsivas y móviles. Creado inicialmente por Twitter,
+                 Bootstrap proporciona un conjunto de herramientas predefinidas y componentes que permiten a los desarrolladores construir interfaces atractivas de manera eficiente</p>
+<br>
+                
+        </div>
+    <div id="conten" class="cotainer_1">
+        <nav>
+           
+            <a href="index.html">Inicio</ahref>
+
+            <a href="bootstrap.html">Bootstrap</a>
+       </nav>
+       <br>
+
+
+       <h2> Grid System</h2>
+       <br>
+       <p>El sistema de cuadrícula de Bootstrap es un diseño flexible basado en filas y columnas que permite crear layouts responsivos. 
+        Está basado en un sistema de 12 columnas,y los desarrolladores pueden combinar diferentes tamaños de columna para crear diversas disposiciones.</p>
+        <p>Bootstrap también permite el uso de clases para definir el tamaño de las columnas en diferentes puntos de interrupción, lo que hace que el diseño sea completamente responsivo.</p>
+        <br>
+        <div id="row" class="row row-cols-2">
+          <div class="col titulo">Caracteristicas</div>
+          <div class="col titulo">Descripcion</div>
+          <div class="col titulo">Simplicidad:</div>
+          <div class="col">Bootstrap ofrece una amplia gama de componentes listos para usar que reducen la necesidad de escribir CSS desde cero</div>
+          <div class="col titulo">Responsividad</div>
+            <div class="col"> Está diseñado para que los sitios se adapten a diferentes tamaños de pantalla,
+                 asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.  </div>
+        <div class="col titulo">Personalización:</div>
+        <div class="col">   Bootstrap permite la personalización de estilos mediante Sass,
+             lo que facilita la adaptación del framework a las necesidades específicas de un proyecto.     </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+     <br> <h2> Flex    </h2>
+     <br>
+      <p>El modelo de Flexbox en Bootstrap permite crear interfaces adaptables y dinámicas.
+         Bootstrap proporciona clases utilitarias para aplicar propiedades flexibles sin necesidad de CSS adicional. </p>      
+
+        <div id="flex">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2">Flex item 1</div>
+                <div class="p-2">Flex item 2</div>
+                <div class="p-2">Flex item 3</div>
+              </div>
+              <div class="d-flex flex-column-reverse">
+                <div class="p-3">Flex item 1</div>
+                <div class="p-3">Flex item 2</div>
+                <div class="p-3">Flex item 3</div>
+              </div>
+
+        </div>
+        <br>
+      <hr>
+
+     <br> <h2> Control Carousel    </h2>
+     <br>
+<p>El Carousel es un componente dinámico que permite presentar contenido, como imágenes o elementos de texto, de manera interactiva. Los usuarios pueden navegar entre los elementos del carrusel mediante botones o deslizándose manualmente.</p>
+<br>   
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/css.png" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/html.png" class="d-block w-100" alt="Imagen 2">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+
+    <br>
+    <hr>
+
+   <br> <h2> Control Navbar   </h2>
+   <br>
+<p>La barra de navegación (Navbar) es un componente esencial para la navegación en un sitio web. Bootstrap proporciona una navbar adaptable que se puede personalizar fácilmente y que se ajusta a diferentes tamaños de pantalla.</p>
+<br>   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#conten">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#row">Características</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+</div>
+
+
+
+</div>
+    
+</div>
+</hgroup>
+</body>
+<footer>
+    <p>&copy; 2024 Francisco Muñoz Castro. Todos los derechos reservados.</p>
+    <p>
+        Correo: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a> | 
+        Teléfono: <a href="tel:+123456789">+123 456 789</a>
+    </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

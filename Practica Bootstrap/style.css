@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    
+
+    background-image: url('./img/cyber.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+
+    
+}
+
+h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+.carousel-item img {
+  height: 700px;
+  
+            object-fit: cover;
+}
+.carousel-inner{
+  border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.nav-tabs .nav-link {
+    color: #0056b3;
+}
+
+.nav-tabs .nav-link.active {
+    color: rgb(255, 255, 255);
+    background-color: #0056b3;
+}
+
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #0056
+
+}
+.contenedor{
+    margin: 0px 10%;
+
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+nav ul.pagination
+{
+   
+    justify-content:center;
+}
+
+.modal-dialog{
+    background: url();
+}
+.row .col-md-4{
+    box-sizing: border-box;
+    border: 0.5px solid  gray;
+}
+
+
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+  }
+  
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .star:hover,
+  .star:hover ~ .star,
+  .star-rating input[type="radio"]:checked ~ .star {
+    color: #ffc107;
+  }
+  #contato{
+    text-align: center
+  }
+  #contato{
+    text-align: center
+  }
+  #contato p{
+    line-height: 36px;
+   font-size: larger;
+   font-weight: bold;
+  }
+  #contato p a{
+    letter-spacing: 3px;
+    font-size: larger;
+    font-weight: lighter;
+   }
+
+
+
+
+
+
+.mobile-image {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .example-card {
+      padding: 1.5rem;
+  }
+}

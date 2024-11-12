@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/multi.css">
+    <title>Multimedia</title>
+    <header>
+        <h1 ><a href="./index.html"id="title">Tarea de HTML5 - Estructura de Multimedia</a></h1>
+
+    </header>  
+</head>
+<body>
+
+
+    <div class="Lista"><ul class="lista_Tipo" >
+        <li><a href="index.html" target="_self">Inicio</a></li>
+        <li><a href="Seccion.html" target="_self">Seccion</a></li>
+        <li><a href="grupo.html" target="_self">Grupo</a></li>
+        <li><a href="Textos.html" target="_self">Textos</a></li>
+        <li><a href="enlace.html" target="_self">Enlace</a></li>
+        <li><a href="imagen.html" target="_self">Imagen</a></li>
+    </ul>
+</div> 
+ <div class="contenedor">
+
+
+
+     
+      <hgroup>
+<h1> Etiquetas de estructura de Imagen: </h1>
+     
+</head>
+<body>
+
+    <h2>Etiqueta &lt;audio&gt;</h2>
+    <p>La etiqueta &lt;audio&gt; se utiliza para insertar archivos de audio en una página web. Puedes usarla para reproducir archivos de audio con controles básicos.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <audio controls>
+            <source src="./Multimedia/Imagine Dragons - Natural (Lyrics)(M4A_128K)_1.mp4" type="audio/mp3">
+          
+        </audio>
+    </div>
+
+    <h2>Etiqueta &lt;video&gt;</h2>
+    <p>La etiqueta &lt;video&gt; se utiliza para insertar archivos de video en una página web. Puedes incluir múltiples fuentes y controles para la reproducción.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <video controls width="600">
+            <source src="./img/Video_tuto.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <h2>Etiqueta &lt;source&gt;</h2>
+    <p>La etiqueta &lt;source&gt; se utiliza dentro de las etiquetas &lt;audio&gt; y &lt;video&gt; para especificar las fuentes del archivo multimedia en diferentes formatos.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+       <h3>se incluye en los ejemplos de video y audio</h3>
+    </div>
+
+    <h2>Etiqueta &lt;track&gt;</h2>
+    <p>La etiqueta &lt;track&gt; se utiliza dentro de la etiqueta &lt;video&gt; para incluir subtítulos o descripciones de audio.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <video controls width="600">
+            <source src="./img/Video_tuto.mp4" type="video/mp4">
+            
+            <track kind="descriptions" src="./Multimedia/WEBVTT FILE.vtt " srclang="en" label="Descripción" default>
+           
+        </video>
+    </div>
+
+    <h2>Etiqueta &lt;canvas&gt;</h2>
+    <p>La etiqueta &lt;canvas&gt; se usa para renderizar gráficos, incluidos los generados dinámicamente, como juegos y visualizaciones.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(10, 10, 150, 100);
+        </script>
+    </div>
+
+    <h2>Etiqueta &lt;svg&gt;</h2>
+    <p>La etiqueta &lt;svg&gt; es un contenedor para gráficos SVG, que tienen varios métodos para dibujar trazados, cuadros, círculos, texto e imágenes gráficas.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="red" />
+        </svg>
+    </div>
+
+    <h2>Etiqueta &lt;iframe&gt;</h2>
+    <p>La etiqueta &lt;iframe&gt; se utiliza para mostrar contenido de otra fuente dentro de una página web, como un video de YouTube.</p>
+    <br>
+    <hr>
+    <div class="Etiquetas">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto?si=JDluzUDuNYIhtxCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</hgroup>  
+    </div>    
+   
+    <footer>
+        <p>&copy; 2024 Francisco Muñoz Castro. Todos los derechos reservados.</p>
+        <p>
+            Correo: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a> | 
+            Teléfono: <a href="tel:+123456789">+123 456 789</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>
