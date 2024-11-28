@@ -1,0 +1,148 @@
+body {
+    color: #fcfbfb;
+    font-family: 'Georgia', serif;
+    background-image: url(/Proyecto/imagenesProyecto/fondo\ pan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#lista-compra tbody img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+.table button {
+    border-radius: 5px; /* Establece bordes redondos */
+}
+/* Estilos para el contenedor principal */
+.my-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el contenedor del carrito */
+#carrito {
+    background-color: rgba(255, 248, 220, 0.8); /* Color crema con opacidad */
+    color: black; /* Color de texto negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+
+
+.row.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para el botón "Seguir comprando" */
+.btn-info {
+    background-color: #4d4627;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilos para el botón "Realizar compra" */
+.btn-success {
+    background-color: #4d4627;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    #carrito table,
+    #carrito thead,
+    #carrito tbody,
+    #carrito th,
+    #carrito td,
+    #carrito tr {
+        display: block;
+    }
+
+    #carrito thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #carrito tr {
+        margin-bottom: 1em;
+    }
+
+    #carrito td {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    #carrito td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    #carrito td:nth-of-type(1):before {
+        content: "Imagen";
+    }
+
+    #carrito td:nth-of-type(2):before {
+        content: "Nombre";
+    }
+
+    #carrito td:nth-of-type(3):before {
+        content: "Precio";
+    }
+
+    #carrito td:nth-of-type(4):before {
+        content: "Cantidad";
+    }
+
+    #carrito td:nth-of-type(5):before {
+        content: "Sub Total";
+    }
+
+    #carrito td:nth-of-type(6):before {
+        content: "Eliminar";
+    }
+
+    #carrito input[name='monto'] {
+        margin-top: 10px;
+    }
+
+    #carrito .text-right {
+        text-align: left;
+    }
+
+    #carrito .form-group.table {
+        overflow-x: auto;
+    }
+
+    #carrito .form-group.table-responsive {
+        width: auto;
+        overflow-x: auto;
+    }
+}

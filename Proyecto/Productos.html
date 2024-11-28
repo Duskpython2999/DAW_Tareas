@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tienda</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/solar/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Productos.css">
+	<link rel="stylesheet" href="css/NavBar.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+	<header>
+
+		<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="homeproyecto.html">
+					<img src="imagenesProyecto/Logo Panaderia.png" alt="Logo Panaderia">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+					aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="homeproyecto.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Productos
+								<span class="visually-hidden">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+					</ul>
+					<div class="container-icon">
+						<div class="container-cart-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="icon-cart">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+							</svg>
+							<div class="count-products">
+								<span id="contador-productos">0</span>
+							</div>
+						</div>
+
+						<div class="container-cart-products hidden-cart">
+							<div class="row-product hidden">
+								<!-- Aquí se muestran los productos en el carrito -->
+								<div class="cart-product">
+									<div class="info-cart-product">
+										<span class="cantidad-producto-carrito">1</span>
+										<p class="titulo-producto-carrito">Zapatos Nike</p>
+										<span class="precio-producto-carrito">₡80</span>
+									</div>
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+										stroke-width="1.5" stroke="currentColor" class="icon-close">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+									</svg>
+								</div>
+							</div>
+						
+							<!-- Botón "Finalizar compra" -->
+							<button type="button" class="btn-finalizar-compra" id="finalizar-compra-btn">Finalizar compra</button>
+						
+							<div class="cart-total hidden">
+								<h3>Total:</h3>
+								<span class="total-pagar">₡200</span>
+							</div>
+							<p class="cart-empty">El carrito está vacío</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main>
+
+		<div class="Busca">
+			<h1>Busca tus productos aquí</h1>
+		<form class="d-flex">
+			<input id="searchInput" class="form-control me-sm-2" type="search" placeholder="Search">
+		</form>
+		</div>
+
+
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/crepas fresa.jpg" alt="Crepas de fresa" />
+				</figure>
+				<div class="info-product">
+					<h2>Crepas de fresa</h2>
+					<p class="price">₡2100</p>
+					<button class="btn-add-cart" data-title="Crepas de fresa" data-price="2100">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/croassant.jpg" alt="Croassant" />
+				</figure>
+				<div class="info-product">
+					<h2>Croassant relleno</h2>
+					<p class="price">₡1800</p>
+					<button class="btn-add-cart" data-title="Croassant relleno" data-price="1800">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/queque de frutas.jpg" alt="Queque Tapita" />
+				</figure>
+				<div class="info-product">
+					<h2>Queque de frutas</h2>
+					<p class="price">₡6500</p>
+					<button class="btn-add-cart" data-title="Queque de frutas" data-price="6500">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/empanada chiverre.jpg" alt="Empanada de chiverre" />
+				</figure>
+				<div class="info-product">
+					<h2>Empanadas chiverre (6 unidades)</h2>
+					<p class="price">₡1100</p>
+					<button class="btn-add-cart" data-title="Empanadas chiverre (6 unidades)" data-price="1100">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/empanadas_de_queso.jpg" alt="Empanadas de queso" />
+				</figure>
+				<div class="info-product">
+					<h2>Empanadas de quesito (6 unidades)</h2>
+					<p class="price">₡1100</p>
+					<button class="btn-add-cart" data-title="Empanadas de quesito (6 unidades)" data-price="1100">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/donaazucarada.jpg" alt="Donas azucaradas" />
+				</figure>
+				<div class="info-product">
+					<h2>Donitas azucaradas (6 unidades)</h2>
+					<p class="price">₡2300</p>
+					<button class="btn-add-cart" data-title="Donitas azucaradas (6 unidades)" data-price="2300">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/pan integral.jpg" alt="Pan integral" />
+				</figure>
+				<div class="info-product">
+					<h2>Pancito integral</h2>
+					<p class="price">₡1100</p>
+					<button class="btn-add-cart" data-title="Pancito integral" data-price="1100">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/pañuelo dulce de leche.jpg" alt="Pañuelo dulce de leche" />
+				</figure>
+				<div class="info-product">
+					<h2>Pañuelo relleno</h2>
+					<p class="price">₡900</p>
+					<button class="btn-add-cart" data-title="Pañuelo relleno" data-price="900">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="./imagenesProyecto/tiramisu.jpg" alt="Tiramisú" />
+				</figure>
+				<div class="info-product">
+					<h2>Tiramisú limón</h2>
+					<p class="price">₡5700</p>
+					<button class="btn-add-cart" data-title="Tiramisú limón" data-price="5700">Añadir al carrito</button>
+				</div>
+			</div>
+
+	</main>
+
+
+	</div>
+	<footer class="footer">
+		<div class="container-Footer">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Contacto</h3>
+					<p>Dirección: Detrás de Plaza Práctico diagonal a Pricemart Alajuela</p>
+					<p>Teléfono: +506 1111 2222</p>
+					<p>Email: panatur256@gmail.com</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Redes Sociales</h3>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#">Facebook</a></li>
+						<li class="list-inline-item"><a href="#">Twitter</a></li>
+						<li class="list-inline-item"><a href="#">Instagram</a></li>
+						<li class="list-inline-item"><a href="#">LinkedIn</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-left">
+					<h3>Suscríbete a nuestro boletín</h3>
+					<p>Recibe nuestras últimas noticias directamente en tu bandeja de entrada.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+  <!-- 
+  Imagenes y videos usados
+	<a href="https://www.cocinadelirante.com/receta/postre/receta-crepas-para-el-dia-de-las-madres-rapido-y-facil"></a>
+	<a href="https://pastriesbyrandolph.com/product/butter-croissant/"></a>
+	<a href="https://www.sanchez-romero.com/almagourmet/hoy-cocinas/naked-cake-con-frutos-rojos-y-almibar-de-cava/"></a>
+	<a href="https://hotels.co.cr/restaurants-sodas-costarica/2002-empanadas-de-chiverre-5-unidades-cafe-vigoroso-distrito-heredia-canton-heredia-25012024.html"></a>
+	<a href="https://es-es.facebook.com/bordenpuertorico/photos/a.10150292340286332.337695.17945421331/10152968643771332/"></a>
+	<a href="https://dev.tvpacifico.mx/recetas-de-cocina/como-preparar-donas-azucaradas"></a>
+	<a href="https://www.elespanol.com/cocinillas/recetas/panes-y-otras-masas/20230618/hacer-pan-integral-semillas-mucha-fibra-saludable/1003085741397_30.html"></a>
+	<a href="https://kafo.cr/product/panuelo-dulce-de-leche-de-coco/"></a>
+	<a href="https://cookpad.com/py/recetas/8632847-tiramisu?ref=search&search_term=montar%20nata%20de%20italia"></a>
+
+
+  -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+	<script src="js/Productos.js"></script>
+
+</body>
+
+</html>

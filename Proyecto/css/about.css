@@ -1,0 +1,51 @@
+body{
+    font-family: 'Georgia', serif;
+    background-image: url(/Proyecto/imagenesProyecto/fondo\ pan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+h1, h2, h3, p{
+    color: black;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen para centrar el contenedor */
+    margin-top: 5px;
+    padding: 20px;
+    background-color: rgba(246, 193, 71, 0.8); /* Fondo semi-transparente para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.owner-image {
+    max-width: 100%; /* Ajustar al ancho máximo del contenedor padre */
+    text-align: center; /* Centrar la imagen horizontalmente */
+  
+}
+
+.owner-image img {
+    width: 20em; /* Ajustar el ancho de la imagen al 100% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+      border-radius: 10px;
+}
+.Acerca, .Info.pana {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente blanco */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque blanco */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.Acerca h2, .Info.pana h2 {
+    color: #4e342e; /* Color de texto café oscuro */
+}
+
+.Acerca h3, .Info.pana h3,
+.Acerca p, .Info.pana h3 {
+    color: #6d4c41; /* Color de texto café */
+}
